@@ -2,10 +2,12 @@ from flask import Flask, request, jsonify, render_template
 from dotenv import load_dotenv
 import os
 import requests
-
-load_dotenv()
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # 允许所有跨域请求
+load_dotenv()
+
 
 @app.route('/')
 def index():
