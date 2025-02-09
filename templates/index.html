@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>周公解梦</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>周公解梦</h1>
+        <textarea id="dreamInput" placeholder="请输入您的梦境描述..."></textarea>
+        <button onclick="analyzeDream()">开始解梦</button>
+        <div id="result" class="result-box"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
