@@ -121,7 +121,7 @@ button:hover {
     border-top: 2px solid #c53d13;
     z-index: 1000;
     text-align: center;
-    min-height: 250px; /* 标准横幅广告高度 */
+    min-height: 100px; /* 标准横幅广告高度 */
     overflow: hidden; /* 防止内容溢出 */
 }
 
